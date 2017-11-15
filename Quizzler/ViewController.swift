@@ -51,14 +51,14 @@ class ViewController: UIViewController {
         nextQuestion()
     }
     
-    func playSound(answer : Int) {
+    func playSound(answer : String) {
         
         var soundName : String = ""
         
-        if answer == 1 {
+        if answer == "Correct" {
             soundName = "Ping"
         }
-        else if answer == 0 {
+        else if answer == "Incorrect" {
             soundName = "Basso"
         }
 
@@ -106,9 +106,11 @@ class ViewController: UIViewController {
         if pickedAnswer == currentQuestion.answer {
             ProgressHUD.showSuccess("Correct!")
             score += 100
+            playSound(answer: "Correct")
         }
         else {
             ProgressHUD.showError("Wrong!")
+            playSound(answer: "Incorrect")
         }
     }
     
