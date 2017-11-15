@@ -16,6 +16,8 @@
 		F0FE8B0B1FBB867600E869E7 /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FE8B0A1FBB867600E869E7 /* QuestionBank.swift */; };
 		F0FE8B101FBBA41800E869E7 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F0FE8B0D1FBBA41500E869E7 /* ProgressHUD.bundle */; };
 		F0FE8B111FBBA41800E869E7 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F0FE8B0E1FBBA41700E869E7 /* ProgressHUD.m */; };
+		F0FE8B141FBBB7A200E869E7 /* Basso.aiff in Resources */ = {isa = PBXBuildFile; fileRef = F0FE8B121FBBB7A000E869E7 /* Basso.aiff */; };
+		F0FE8B151FBBB7A200E869E7 /* Ping.aiff in Resources */ = {isa = PBXBuildFile; fileRef = F0FE8B131FBBB7A100E869E7 /* Ping.aiff */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		F0FE8B0D1FBBA41500E869E7 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
 		F0FE8B0E1FBBA41700E869E7 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
 		F0FE8B0F1FBBA41800E869E7 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		F0FE8B121FBBB7A000E869E7 /* Basso.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Basso.aiff; sourceTree = "<group>"; };
+		F0FE8B131FBBB7A100E869E7 /* Ping.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Ping.aiff; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,8 @@
 		633646BC1B8C657400FF45E2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F0FE8B121FBBB7A000E869E7 /* Basso.aiff */,
+				F0FE8B131FBBB7A100E869E7 /* Ping.aiff */,
 				F0FE8B0D1FBBA41500E869E7 /* ProgressHUD.bundle */,
 				F0FE8B0F1FBBA41800E869E7 /* ProgressHUD.h */,
 				F0FE8B0E1FBBA41700E869E7 /* ProgressHUD.m */,
@@ -173,6 +179,8 @@
 			files = (
 				F0FE8B101FBBA41800E869E7 /* ProgressHUD.bundle in Resources */,
 				633646C41B8C657400FF45E2 /* Main.storyboard in Resources */,
+				F0FE8B141FBBB7A200E869E7 /* Basso.aiff in Resources */,
+				F0FE8B151FBBB7A200E869E7 /* Ping.aiff in Resources */,
 				633646C91B8C657400FF45E2 /* LaunchScreen.xib in Resources */,
 				633646C61B8C657400FF45E2 /* Images.xcassets in Resources */,
 			);

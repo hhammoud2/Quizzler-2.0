@@ -9,6 +9,7 @@
 
 import UIKit
 import GameplayKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
@@ -19,6 +20,8 @@ class ViewController: UIViewController {
     var questionNumber : Int = 0
     var score : Int = 0
     var shuffled = [Question]()
+    var player: AVAudioPlayer?
+    
     
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
@@ -46,10 +49,33 @@ class ViewController: UIViewController {
         checkAnswer()
         questionNumber += 1
         nextQuestion()
-
-
     }
     
+    func playSound(answer : Int) {
+        
+        var soundName : String = ""
+        
+        if answer == 1 {
+            soundName = "Ping"
+        }
+        else if answer == 0 {
+            soundName = "Basso"
+        }
+
+        guard let url = Bundle.main.url(forResource: soundName, withExtension: ".aiff") else { return }
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            try AVAudioSession.sharedInstance().setActive(true)
+            
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.aiff.rawValue)
+            guard let player = player else { return }
+            player.prepareToPlay()
+            player.play()
+        }
+        catch {
+            print(error)
+        }
+    }
     
     func updateUI() {
         scoreLabel.text = "Score: \(score)"
